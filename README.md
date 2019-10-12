@@ -5,7 +5,7 @@ This library is a plugin of Seurat for t-SNE transformation. Users can do t-SNE 
 2. Running R script:<br>
 ```
 library(seurat)
-source('tsnetplugin.R') # t-SNE transformation library should be located here
+source('tsnetplugin.R') # set the path to the location of library you downloaded
 mca <- CreatSeuratObject(counts = yourdata, project = yourProjectName)
 mca <- NormalizeData(object = mca, normalization.method='RC')
 mca <- tsneTransform(object = mca, 
