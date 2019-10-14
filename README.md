@@ -31,12 +31,12 @@ mca <- ScaleData(object = mca,...)
 
 5. Further analysis steps in Seurat. such as 
 ```
-mca <- FindNeibour(mca,...)
+mca <- FindNeibour(mca,reduction='tsnetransformation',...)  # Please annouce reduction='tsnetransformation', or the clustering will follow the results of PCA
 ...
 ```
 or
 ```
-mca <- RunUMAP(mca, reduction = 'tsnetransform', dim=1:30,...) 
+mca <- RunUMAP(mca, reduction = 'tsnetransform', dim=1:30,...)  # Please annouce reduction='tsnetransformation', or the clustering will follow the results of PCA
 ...
 ```
 
