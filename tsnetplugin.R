@@ -10,7 +10,7 @@ if(!require('matlabr')){
   install.packages('matlabr')
   library(matlabr)
 }
-libpath<-dirname(rstudioapi::getSourceEditorContext()$path)
+libpath<-"/media/sf_D_DRIVE/H/tsneTransformation"
 
 dim.reduction <- setClass(
   Class = "DimReduc",
